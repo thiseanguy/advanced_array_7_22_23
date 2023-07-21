@@ -23,7 +23,6 @@ return newStr
 };
 
 function snakeToCamel(str) {
-    // Your code here
    return str.split('_').map(word =>  upLet(word)).join('')
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
