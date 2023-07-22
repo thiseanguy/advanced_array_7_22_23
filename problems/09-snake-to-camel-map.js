@@ -14,15 +14,22 @@ console.log(snakeToCamel('app_academy_is_cool')); // 'AppAcademyIsCool'
 console.log(snakeToCamel('APp_ACADEMY_iS_cOol')); // 'AppAcademyIsCool'
 
 */
+const upLet = function(str){
+   let newStr = str[0].toUpperCase();
+    for(let i = 1; i < str.length; i++){
+        newStr += str[i].toLowerCase();
+    }
+return newStr
+};
 
 function snakeToCamel(str) {
     // Your code here
+   return str.split('_').map(word =>  upLet(word)).join('')
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
     module.exports = snakeToCamel;
 } catch (e) {
     module.exports = null;
-}
+}
