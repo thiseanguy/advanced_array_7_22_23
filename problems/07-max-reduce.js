@@ -15,9 +15,9 @@ console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 */
 
 let maxWithReduce = function(nums) {
-    // Your code here
+   return nums.reduce((max , num) => {if(num > max){max = num}; return max}, null)
+   //return nums.reduce((max , num) => {  return num > max ? max = num  : max}, null) //this works too.
 };
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
