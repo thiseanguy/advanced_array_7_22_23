@@ -14,12 +14,13 @@ console.log(removeEWords('Enter the building')); // 'building'
 
 let removeEWords = function(sentence) {
     // Your code here
+     return sentence.split(" ").filter(word => !(word.toLowerCase().includes('e'))).join(" ")
 };
-
+console.log(removeEWords('What time is it everyone?')); // 'What is it'node
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
   module.exports = removeEWords;
 } catch (e) {
   module.exports = null;
-}
+}
